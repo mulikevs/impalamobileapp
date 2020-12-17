@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ImpalaUk</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="remember_me">    Remember Me</string>
+    <string name="reset_password"><u><i> Reset Password </i></u></string>
+    <string name="login">Login</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="sing_up">Sign Up</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="normal_text">"Don't  worry! Just fill-in your Email and "</string>
+    <string name="normal_text1">"we'll  help you reset your password "</string>
+    <string name="normal_text2">"Please fill all required information"</string>
+    <string name="normal_text3">"to create a new account"</string>
+    <string name="normal_text4">By Clicking Register, you accept the </string>
+    <string name="normal_text5">Terms of Service and Privacy Policy</string>
+    <string name="register">Register</string>
+    <string name="ent_ur_email">Enter Your Email address</string>
+    <string name="reset">Reset</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="first_name">First Name</string>
+    <string name="dateofbirth">Date of Birth [match ID info]</string>
+    <string name="curreny">Currency</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_add">Email Address</string>
+    <string name="mobile_no">Mobile Number</string>
+    <string name="re_password">Retype your password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="view">View</string>
+    <string name="yourcurentsawaPay">Your Curent SawaPay</string>
+    <string name="us">US $</string>
+    <string name="balance">balance is</string>
+    <string name="transtion">Transaction History</string>
+    <string name="wallet">Wallet Top-up</string>
+    <string name="suceessful">successful</string>
+    <string name="rupess"> $1,75.00 </string>
+    <string name="date"> Feb27,2015</string>
+    <string name="topup">Top-up Wallet</string>
+    <string name="sendmoney"> Send Money</string>
+    <string name="withdrawfund"> Withdraw Fund</string>
+    <string name="manageacc">Manage Accounts</string>
+    <string name="fundtransfer">Fund Transfer</string>
+    <string name="unsuceessful">unsuccessful</string>
+    <string name="country">Country</string>
+    <string name="attach_a_card"> Attach a Card</string>
+    <string name="link_bank_acc"> Add Bank Account</string>
+    <string name="cardname">Card Name</string>
+    <string name="giveanameforesa">(Give a name for easy identification)</string>
+    <string name="samplename">Sample Name</string>
+    <string name="cardnumber">Card Number</string>
+    <string name="thetextoffrontofcard">(The 16 digits on front of your card)</string>
+    <string name="expireddate">Expiration Date</string>
+    <string name="cvc">CVC/CVC2</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="xxx">XXX</string>
+    <string name="xxxxxxx">XXXXXXXXXXXXXXXXXX</string>
+    <string name="nameoncard">Name on Card</string>
+    <string name="cardownername">Card Owner Name</string>
+    <string name="attachandvarify">Attach &amp; Verify Card</string>
+    <string name="attachandvarifyaccou">Attach &amp; Verify Account</string>
+    <string name="mobile_num">7222222222</string>
+    <string name="country_">Nationality:</string>
+    <string name="cardname_">Card Name:</string>
+    <string name="div">/</string>
+    <string name="yourcarddetail">Your information is secured with 256 bit encryption by Symantec</string>
+    <string name="verifycationrequed">Verification Required</string>
+    <string name="deletcard">Delete Card</string>
+    <string name="verfiycard">Verify Card</string>
+    <string name="bankname">Bank Name</string>
+    <string name="swiftcode">Routing Number</string>
+    <string name="abcbank">ABC Bank</string>
+    <string name="accountnum">Account Number</string>
+    <string name="cardnumber_">Card Number:</string>
+    <string name="accountnum_">Account Number:</string>
+    <string name="expireddate_">Expiration Date:</string>
+    <string name="bankname_">Bank Name:</string>
+    <string name="swiftcode_">Routing Number:</string>
+    <string name="aba_number">Routing Number</string>
+    <string name="nameoncard_">Name on Card:</string>
+    <string-array name="payment_purpose">
+        <item>-Select Transfer Purpose-</item>
+        <item>Family or Friend Support</item>
+        <item>Purchase of Services</item>
+        <item>Paying Bills</item>
+        <item>Property Payment</item>
+        <item>Sending Funds to self</item>
+    </string-array>
+
+
+    <string name="fb_app_id">328520583973395</string>
+    <!-- choose transfer mode -->
+
+    <string name="startusingnow">Start Using Now</string>
+    <string name="ewallettomobile">eWallet to Mobile money</string>
+    <string name="cardtomobile">Card to Mobile money</string>
+    <string name="ewallettoewallet">eWallet to eWallet money</string>
+
+
+    <!--
+    <string-array name="new_transfer_mode">
+        <item>Card to Mobile Money</item>
+        <item>eWallet to Mobile Money</item>
+        <item>eWallet to eWallet Money</item>
+    </string-array>
+
+    -->
+    <string name="bank_unaivailble">This Service is Currently not Available for Canadian Users</string>
+
+    <string-array name="new_transfer_mode">
+        <item>Card to MPESA</item>
+        <item>Ewallet to MPESA</item>
+        <item>Ewallet to Ewallet Money</item>
+        <item>Account to Account</item>
+        <item>Account to MPESA</item>
+    </string-array>
+
+    <!-- upload fund -->
+
+    <string name="purpose">Purpose</string>
+    <string name="select_card">Select Bank</string>
+    <string name="amount">Amount</string>
+    <string name="uploadfundtoewallet">Upload Fund to eWallet</string>
+    <string name="fifty">500.00</string>
+    <string name="one">1.00</string>
+    <string name="usd">USD</string>
+    <string name="cardno">Bank No.</string>
+    <string name="hintaccountno">4XXX-XXXX-XXXX-4242</string>
+    <string name="expiry">Expiry:</string>
+    <string name="date_">May - 2019</string>
+    <string name="name">Name:</string>
+    <string name="yash">Yash</string>
+    <string name="currencyinkyn">Currency in</string>
+    <!-- Transaction History -->
+    <string name="thankuforord">Thank you for your order,</string>
+    <string name="weprocessing">We are processing your order and soon</string>
+    <string name="youwillgetconfirmationmessage">you will get a confirmation message.</string>
+    <string name="orderdetail">Order Detail</string>
+    <string name="orderno">Order No.</string>
+
+    <!-- Settings -->
+
+    <string name="genralsetting">General Setting</string>
+    <string name="basecurrency">Base Currency</string>
+    <string name="pushnotification">Push Notifications</string>
+    <string name="securitysettings">Security Settings</string>
+    <string name="changepassword">Change Password</string>
+    <string name="changepin">Change PIN(Security Code)</string>
+    <string name="other">Other</string>
+    <string name="aboutsawapay">About ImpalaPayUk</string>
+    <string name="shareapp">Share the App</string>
+
+    <!-- Order Detail -->
+    <string name="transactionsummary">Transactions</string>
+    <string name="transactionhistory">Transaction History</string>
+
+    <!-- Send Money -->
+
+    <string name="choosetransfermode">Choose Transfer Mode</string>
+
+    <!-- Change Pin dialog -->
+    <string name="setyoursequritypin">Set Your Security PIN</string>
+    <string name="typeyouroldpin">Type your old PIN</string>
+    <string name="typeyournewpin">Type your new PIN</string>
+    <string name="retypeyournewpin">Re-type your new PIN</string>
+    <string name="digit">12345</string>
+    <string name="confirm">Confirm</string>
+    <string name="discard">Discard</string>
+
+    <!-- Active Pin dialog -->
+
+    <string name="pleseenteryourpin">Please Enter Your PIN</string>
+
+    <!-- Account verification -->
+    <string name="account_varify_msg">To Verify Correctness of the account information, system will do a micro transaction of an amount Between 0.5 USD to 1.9 USD. This amount will be debited from this account which will be credited back to your eWallet after the verification.</string>
+    <string name="account_varify_accept">Please Enter the amount that was deducted from this card. You can get the transaction amount either from account statemnt or by calling directly to the representative of your bank.</string>
+    <!-- Change passwrord -->
+    <string name="changeyourpassword">Change Your Password</string>
+    <string name="oldpassword">Old Password</string>
+    <string name="newpassword">New Password</string>
+    <string name="confpassword">Re-type new  Password</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Profile</item>
+        <item>Send Money</item>
+        <!--<item>Pay Bill</item>-->
+        <!-- <item>Airtime</item> -->
+        <!-- <item>Withdraw Fund</item> -->
+        <!-- <item>Topup Wallet</item> -->
+        <item>Manage Debit Cards</item>
+        <item>Manage Bank Accounts</item>
+        <!-- <item>Manage Accounts &amp; Cards</item> -->
+        <item>Manage Beneficiaries</item>
+        <item>Transaction History</item>
+        <item>Invite Friends</item>
+        <item>Settings</item>
+        <!--<item>Deals</item>-->
+        <item>Contact us</item>
+        <!--<item>Customer Support</item>-->
+        <item>Logout</item>
+    </string-array>
+
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/profile_1</item>
+        <item>@drawable/send_money_drawer</item>
+        <!--<item>@drawable/transation_drawer</item> -->
+        <!--<item>@drawable/airtime</item>-->
+        <!--<item>@drawable/wallet_drawer</item> -->
+        <!-- <item>@drawable/withdraw_drawer</item> -->
+        <item>@drawable/manage_drawer</item>
+        <item>@drawable/manage_drawer</item>
+        <item>@drawable/add_beneficiary</item>
+        <item>@drawable/transaction_history</item>
+        <item>@drawable/share</item>
+        <item>@drawable/setting</item>
+        <!-- <item>@drawable/offer</item> -->
+        <item>@drawable/icon_contacts</item>
+        <!--<item>@drawable/customer_support</item>-->
+        <item>@drawable/logout</item>
+    </array>
+
+    <string name="title_activity_link_bank_account">LinkBankAccount</string>
+    <string name="title_activity_splesh_screen">SpleshScreen</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <!-- profile -->
+    <string name="profile">Profile</string>
+    <string name="address">Address:</string>
+    <string name="zipcode">Zip-code:</string>
+    <string name="zipcode1">Zip-code</string>
+    <string name="mobile_no_">Mobile Number:</string>
+    <string name="email_add_">Email Address:</string>
+    <string name="curreny_">Currency:</string>
+    <string name="DOB_">Date of Birth</string>
+    <string name="addressline">Address.. line 1</string>
+    <string name="addressline2">line 2</string>
+    <string name="name_">Name:</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+
+    <!-- contact us -->
+    <string name="contactus">Contact Us</string>
+    <string name="tempaddress">SawaPay  </string>
+    <string name="tempemail">info@impalapayuk.com</string>
+    <string name="title_activity_customer_support">CustomerSupport</string>
+    <string name="CustomerSupport">Customer Support</string>
+
+    <!-- customer support -->
+    <string name="to_">To:</string>
+    <string name="abc">abc</string>
+    <string name="subject">Subject</string>
+    <string name="message_">Message:</string>
+    <string name="send">Send</string>
+    <string name="title_activity_promote">PromoteActivity</string>
+    <string name="customer_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 1psum has been the industrys standard dummy text ever since the 1500s, when an unknown printer taak a galley of type and scrambled it ta make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Larem 1psum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem I psum. 
+</string>
+
+    <!-- promote -->
+    <string name="promote">Promote</string>
+    <string name="thankyouforus">Thank you for using this app, </string>
+    <string name="secondtext">Tell your friends to get fast transition process get a deal for yourself and every friend that joins SAWAPAY with your promo code. Theres no limit to how many you can earn.</string>
+    <string name="title_activity_deals">DealsActivity</string>
+
+    <!-- Deals -->
+    <string name="deals">Deals</string>
+    <string name="nortan_logo">Nortan logo</string>
+    <string name="transfer_mode">Transfer Mode</string>
+    <string name="competitors_rates">Competitors Rates</string>
+    <string name="westorn_union">Western Union</string>
+    <string name="money_gram">Money Gram</string>
+    <string name="title_activity_demo_transcation">DemoTranscation</string>
+    <string name="message">Message</string>
+    <string name="review_send">Review &amp; Send</string>
+
+    <string name="terms_url">https://www.impalapayuk.com/?page_id=2637</string>
+    <string name="privacy_url">https://www.impalapayuk.com/?page_id=2635</string>
+    <string name="site_url">https://www.impalapayuk.com</string>
+    <string name="about_url">https://www.impalapayuk.com/about-impalapayuk/</string>
+    <string name="contact_email">customercare@impalapayuk.com</string>
+    <string name="contact_phone">+18444556476</string>
+    <string name="title_activity_control_application">ControlApplication</string>
+    <string name="title_activity_control">ControlActivity</string>
+    <string name="title_activity_control__application">Control_Application</string>
+    <string name="app_store_url">https://play.google.com/store/apps/details?id=com.firstchoicegl.sawa</string>
+    <string name="title_activity_manage_card">ManageCard</string>
+    <string name="title_activity_transfer_limit">Transfer Limit</string>
+
+    <string-array name="country_code">
+        <item>+254</item>
+        <item>+256</item>
+        <item>+263</item>
+        <item>+1</item>
+    </string-array>
+    <string-array name="country">
+        <item>+263</item>
+    </string-array>
+    <string-array name="c_code">
+        <item>+1</item>
+    </string-array>
+    <string name="title_activity_manage_beneficiaries">Manage Beneficiaries</string>
+    <string name="title_activity_edit_beneficiary">EditBeneficiary</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

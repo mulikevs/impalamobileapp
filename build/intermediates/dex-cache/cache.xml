@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\libs\httpmime-4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f6b9ce4485869cc314171c554a436e6121783fbe">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\httpmime-4.1_926a343f642ded99c5adf8172a7e3e3122ba98b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\.android\build-cache\ea8e36ef0ec4bf2b75f7ebd1853d63009e16caae\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\classes_4dde0c6f238b5e966a525a588aa9584b0e04fdd8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\.android\build-cache\204aa7863d948bdca3350b024263e038ba5b8c14\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\classes_87c724c2453d4ff6eaac7493161f2277ef5c3078.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\libs\json-simple-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5d6f9b6a9ddca2a28c0216cc44efb2e20d9c23b5">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\debug\json-simple-1.1.1_2f0b1bcd44304e1f02a4ee77dfc40b70f7fb8518.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\libs\core.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69ab751723c7f7c8a01fddb1d169a93160fadca7">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\core_7169c8d686642fa02b5ec09af32bb447e5a4d190.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\.android\build-cache\a5c3c37ebe14f7e1312cd854529243df45d288e8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\classes_f3face8f65be7b3f2130d5463ccf978a95bae8e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\.android\build-cache\694a81934783a8bcd6144174343f512900398227\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\classes_27dfc9d092e770b46f00f35889164888947caa29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\.android\build-cache\e3331aaa286cc8dc3cff23b21c0f4334cfbae3ef\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fc3036436defd3070337b7191c50a136ebca7f8f">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\classes_517ee3787fbb578f5687a38df87cfb7335447fa4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\.android\build-cache\fee30c7548a45dcff91d8787d1c6010758f5c69e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\classes_80d74d4fff7442c5a8b0c021db8c1aa847d40356.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\libs\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\release\picasso-2.5.2_bb45ec6967b729c670bebf3d11e8cd1f18d52f94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\libs\android-async-http-1.4.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3bae85a076241828810bf8fbcc12e5891d5fc34c">
+        <dex dex="C:\Users\Beth\AndroidStudioProjects\SawaPay (1) 2\SawaPay (1)\SawaPay\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.4_1788d624520fd6829d92a9ae8f00370b38fd8060.jar" />
+    </item>
+
+</items>

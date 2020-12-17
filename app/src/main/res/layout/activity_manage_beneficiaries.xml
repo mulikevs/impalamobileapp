@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/blue_latter" />
+
+            <Button
+                android:id="@+id/btn_add_beneficiary"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/button_custom_blue"
+                android:text="Add New Beneficiary"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/blue_latter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="My Beneficiaries"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_18" />
+
+            <View
+                android:layout_width="151dp"
+                android:layout_height="0.2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="#93DC69" />
+
+            <EditText
+                android:id="@+id/et_search_beneficiary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_custom"
+                android:hint="Search..."
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:weightSum=".5" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.50"
+                        android:gravity="center"
+                        android:text="Current Balance: "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_18"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:weightSum="1.5" >
+
+                    <TextView
+                        android:id="@+id/tvremainamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight=".75"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_18"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/transactionhistory"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_18"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="151dp"
+                android:layout_height="0.2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="#93DC69" />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/empty_beneficiary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="30dp"
+                        android:text="No Beneficiary Found"
+                        android:textColor="@color/gry_text"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:id="@+id/beneficiary_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:divider="#93DC69"
+                        android:dividerHeight="0.3dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <include layout="@layout/footer" />
+
+        <!-- android:background="#FFddAA" -->
+    </LinearLayout>
+
+</LinearLayout>

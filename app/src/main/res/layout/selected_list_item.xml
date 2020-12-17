@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlNavRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_listview"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/txtNavTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:text="aaaaaaaaaaaaa"
+            android:textColor="@color/yellow"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imvNavIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNavRowSel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_brown"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/title11"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow" />
+
+        <TextView
+            android:id="@+id/txtNavTitleSel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:text="aaaaaaaaaaaaa"
+            android:textColor="@color/yellow"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imvNavIconSel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,616 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/hide_menu"
+    android:orientation="vertical"
+    android:weightSum="5.8" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue_latter" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2.3"
+        android:orientation="vertical"
+        android:weightSum="2.3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".35"
+            android:orientation="vertical"
+            android:weightSum=".35" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="General settings"
+                android:textColor="@color/blue_latter"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lig_gry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:weightSum=".4" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".3" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/basecurrency"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:weightSum=".1" >
+
+                <Spinner
+                    android:id="@+id/basecurrency_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp"
+                    android:layout_weight=".1"
+                    android:background="@drawable/basecurrency_spinner"
+                    android:gravity="right"
+                    android:spinnerMode="dialog"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp"></Spinner>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/arrow_left"
+                    android:padding="3dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/lig_gry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:weightSum=".4" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".3" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Converted Currency"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:weightSum=".1" >
+
+                <Spinner
+                    android:id="@+id/convertcurrency_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp"
+                    android:layout_weight=".1"
+                    android:background="@drawable/basecurrency_spinner"
+                    android:gravity="right"
+                    android:spinnerMode="dialog"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp" >
+                </Spinner>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/arrow_left"
+                    android:padding="3dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/lig_gry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.15"
+            android:orientation="vertical"
+            android:weightSum="1.15" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35"
+                android:orientation="vertical"
+                android:weightSum=".35" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Other Settings"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/lig_gry" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/change_pwd_ly"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".42"
+                android:orientation="horizontal"
+                android:weightSum=".4" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum=".3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/changepassword"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/change_password_li"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:weightSum=".1" >
+
+                    <ImageButton
+                        android:id="@+id/change_password_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/arrow_left"
+                        android:padding="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/transfer_limit_ly"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".42"
+                android:orientation="horizontal"
+                android:weightSum=".4" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum=".3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Set Transfer Limit"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/transfer_limit_li"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:weightSum=".1" >
+
+                    <ImageButton
+                        android:id="@+id/transfer_limit_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/arrow_left"
+                        android:padding="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/lig_gry" />
+
+            <LinearLayout
+                android:id="@+id/securitypin_chnge_ly"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".42"
+                android:orientation="horizontal"
+                android:weightSum=".4"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum=".3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/changepin"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight=".1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:weightSum=".1" >
+
+                    <ImageButton
+                        android:id="@+id/change_pin_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/arrow_left"
+                        android:padding="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lig_gry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.15"
+            android:orientation="vertical"
+            android:weightSum="1.15" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35"
+                android:orientation="vertical"
+                android:weightSum=".35" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/other"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/lig_gry" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/about_Sawapay_ly"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".42"
+                android:orientation="horizontal"
+                android:weightSum=".4" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum=".3" >
+
+                    <TextView
+                        android:id="@+id/about_Sawapay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="About SawaPay"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:weightSum=".1" >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/arrow_left" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/lig_gry" />
+
+            <LinearLayout
+                android:id="@+id/share_ly"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".42"
+                android:orientation="horizontal"
+                android:weightSum=".4" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum=".3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/shareapp"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:weightSum=".1" >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/arrow_left" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lig_gry" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/noti_rem_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:weightSum=".4"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".3" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/pushnotification"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".1" >
+
+                <Switch
+                    android:id="@+id/switchSigninRem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:switchMinWidth="50dp"
+                    android:textOff="  "
+                    android:textOn="  "
+                    android:thumb="@drawable/switch_thumb_shape"
+                    android:track="@drawable/switch_track_shape_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lig_gry" />
+
+        <LinearLayout
+            android:id="@+id/alert_rem_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal"
+            android:weightSum=".4"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".3" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Security Pin Alert"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".1">
+
+                <Switch
+                    android:id="@+id/switchPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:switchMinWidth="50dp"
+                    android:textOff="  "
+                    android:textOn="  "
+                    android:thumb="@drawable/switch_thumb_shape"
+                    android:track="@drawable/switch_track_shape_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/lig_gry" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".10" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="3.35"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="1.1" >
+
+        <Button
+            android:id="@+id/save_setting"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_custom_blue"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:visibility="gone">
+        </Button>
+
+        <include layout="@layout/footer" />
+    </LinearLayout>
+
+</LinearLayout>

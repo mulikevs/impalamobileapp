@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "291067132059",
+    "firebase_url": "https://sawapay-ca810.firebaseio.com",
+    "project_id": "sawapay-ca810",
+    "storage_bucket": "sawapay-ca810.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291067132059:android:af61836f11cada9a",
+        "android_client_info": {
+          "package_name": "com.firstchoicegl.sawa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291067132059-g2qf9mcaatfje7re2a7l7g6d4nrnh2vf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firstchoicegl.sawa",
+            "certificate_hash": "4fc1ec05745bcc0c18cd8f551611da17431bf60b"
+          }
+        },
+        {
+          "client_id": "291067132059-2ddls3rfs9if133mv28cg3aao8d5qg5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCG6_oqt8U-_zv3GIhAnq4urbHhJAy0n0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291067132059-2ddls3rfs9if133mv28cg3aao8d5qg5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

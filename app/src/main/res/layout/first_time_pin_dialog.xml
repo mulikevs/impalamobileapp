@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="270dp"
+    android:background="@drawable/courner_round_bankground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/upper_courner"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/small_logo_old" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="25dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setyoursequritypin"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="25dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/typeyournewpin"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/type_pin_et"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="@string/digit"
+                android:paddingLeft="@dimen/ten"
+                android:inputType="numberPassword"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="25dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/retypeyournewpin"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/retype_pin"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="@string/digit"
+                android:paddingLeft="@dimen/ten"
+                android:inputType="numberPassword"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/discard_pin"
+            android:layout_width="26dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/delet_card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/confirm_pin"
+            android:layout_marginLeft="60dp"
+            android:text="@string/discard"
+            android:textColor="@color/red_text" />
+
+        <ImageView
+            android:id="@+id/confirm_pin"
+            android:layout_width="26dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/discard_pin"
+            android:background="@drawable/verify" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/confirm_pin"
+            android:layout_marginLeft="150dp"
+            android:text="@string/confirm"
+            android:textColor="@color/blue_latter" />
+    </RelativeLayout>
+
+</LinearLayout>

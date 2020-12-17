@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/atm_lay"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/atm_card_corner"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/card_type_im"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                   
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/card_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/card_type_im"
+                    android:text="@string/balance"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/account_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/card_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/card_type_im"
+                    android:text="jaioasojj"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size10" />
+
+                <TextView
+                    android:id="@+id/card_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@+id/card_name"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/verify_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/verifycationrequed"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="@dimen/text_size8"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/verify_im"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/verify_tv"
+                    android:layout_toLeftOf="@+id/verify_tv"
+                    android:background="@drawable/info"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/backround_overlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                  />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/sadow_for_card" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sadow_for_card" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/horizontal_dashed_line"
+                android:layerType="software" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

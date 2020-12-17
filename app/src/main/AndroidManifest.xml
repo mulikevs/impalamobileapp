@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.impalapay.uk"
+    android:versionCode="37"
+    android:versionName="1.3.4">
+
+    <uses-sdk
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.impalapay.uk.ControlApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/small_logo_2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.impalapay.uk.SpleshScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.impalapay.uk.Login"
+            android:label="@string/title_activity_reset_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.Registration"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name="com.impalapay.uk.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.Standing_Transcation"
+            android:label="Standing Transcation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.impalapay.uk.AboutSawaPay"
+            android:label="Standing Transcation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.SendMoney2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.SendMoney3"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".SendMoney" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="com.impalapay.uk.SendMoneyCashPickup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.SendMoney4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.SendMoney_PayBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.AttachCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.AddBankAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.impalapay.uk.Control_Application"
+            android:label="@string/title_activity_control__application" />
+        <activity
+            android:name="com.impalapay.uk.TransferLimit"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.impalapay.uk.InteracWebview" />
+        <activity android:name="com.impalapay.uk.Otp"></activity>
+    </application>
+
+</manifest>

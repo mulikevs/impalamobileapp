@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue_latter" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+               
+                android:background="@color/lig_gry"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Balance: "
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/current_balnce_withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                   
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+              android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_card"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Spinner
+                    android:id="@+id/card_select_sp_withdraw"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@drawable/country_link_bank_acc"
+                    android:paddingLeft="@dimen/five"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+             android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:orientation="horizontal"
+                    android:weightSum=".7" >
+
+                    <EditText
+                        android:id="@+id/amount_withdraw_et"
+                        style="@style/font_my_font"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight=".7"
+                        android:background="@drawable/edittext_custom"
+                        android:hint="@string/fifty"
+                        android:inputType="numberDecimal"
+                        android:padding="7dp"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum=".3" >
+
+                    <TextView
+                        android:id="@+id/currency_tv_withdraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USD "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.1"
+                android:gravity="bottom|center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/withdraw"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/btn_selector_blue_bg"
+                    android:text="Withdraw fund"
+                    android:textColor="@android:color/white" >
+                </Button>
+
+                <include layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout> 

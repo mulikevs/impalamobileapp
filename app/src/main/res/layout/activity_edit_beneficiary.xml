@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hide_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue_latter" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scrollbars="none"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Mobile Number: "
+
+                android:textColor="@color/blue_latter"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edittext_custom"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Spinner
+                    android:id="@+id/mobile_code_sp_edit"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/five"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_14" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/mobile_num"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="15sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/kenya"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" +254"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+                <Spinner
+                    android:id="@+id/country_code_sp1_edit"
+                    style="@style/font_my_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:drawablePadding="@dimen/ten"
+                    android:background="@drawable/edittext_custom"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:entries="@array/country_code"/>
+
+                <EditText
+                    android:id="@+id/mobile_number_beneficiary_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:maxLength="10"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/kenya"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" +254"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="15sp"
+                    android:visibility="gone"/>
+                <Spinner
+                    android:id="@+id/confirm_country_code_sp1_edit"
+                    style="@style/font_my_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:drawablePadding="@dimen/ten"
+                    android:background="@drawable/edittext_custom"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:entries="@array/country_code"/>
+
+                <EditText
+                    android:id="@+id/confirm_mobile_number_beneficiary_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="Re-enter Mobile Number"
+                    android:inputType="number"
+                    android:padding="7dp"
+                    android:maxLength="10"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/fname__beneficiary_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="First name"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/lname__beneficiary_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Last name"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/email__beneficiary_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Email Address (Optional)"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/address_beneficiary_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Physical Address (Optional)"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Country of Residence: "
+                android:textSize="15sp"
+                android:textColor="@color/blue_latter"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/country_of_resdience_beneficiary_edit"
+                style="@style/font_my_font"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/country_link_bank_acc"
+                android:visibility="gone">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/city_beneficiary_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="City/Town"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/add_bank_btn_beneficiary_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_custom_blue"
+                android:text="Bank Account(Optional)"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/bank_add_ly_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Select Bank: "
+                    android:textColor="@color/blue_latter" />
+
+                <Spinner
+                    android:id="@+id/select_bank_sp_beneficiary_edit"
+                    style="@style/font_my_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/country_link_bank_acc" >
+                </Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Select Bank Branch: "
+                    android:textColor="@color/blue_latter" />
+
+                <Spinner
+                    android:id="@+id/select_bank_branch_sp_beneficiary_edit"
+                    style="@style/font_my_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/country_link_bank_acc" >
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/account_name_beneficiary_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Account Name"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/account_number_beneficiary_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Account Number"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/confirm_account_number_beneficiary_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Re-enter Account Number"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save_btn_beneficiary_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_custom"
+                android:text="Edit"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                >
+
+                <include layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

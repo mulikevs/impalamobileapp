@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_activity" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Attach a Government Issued Photo ID. Select Document Type, take a clear Picture and Upload"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/picture_image_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/document_type"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawablePadding="@dimen/ten"
+                    android:background="@drawable/edittext_custom"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"/>
+
+                <EditText
+                    android:id="@+id/document_number"
+                    style="@style/font_my_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Enter Document Number"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/gry_text"
+                    android:textSize="15sp" android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/start_camera_button"
+                    android:text="Take Picture"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_custom_blue"
+                    android:layout_below="@+id/picture_image_preview"
+                    android:layout_marginRight="5dp"/>
+
+                <Button
+                    android:id="@+id/upload_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image"
+                    android:layout_below="@+id/start_camera_button"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_custom_blue"
+                     />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

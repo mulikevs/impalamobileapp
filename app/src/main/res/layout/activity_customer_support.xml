@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hide"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue_latter" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/customer_support" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/CustomerSupport"
+                android:textColor="@color/blue_latter"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:text="@string/customer_text"
+                android:textColor="@color/blue_latter"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/light_gry_boder"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/sub_edit"
+                    style="@style/font_my_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="@string/subject"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                   android:textColorHint="@color/gry_text" />
+
+                <EditText
+                    android:id="@+id/message_et"
+                    style="@style/font_my_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="@string/message"
+                    android:lines="3"
+                    android:maxLines="4"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/blue_latter"
+                   android:textColorHint="@color/gry_text" />
+
+                <Button
+                    android:id="@+id/customer_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/customized_sent_button"
+                    android:drawableLeft="@drawable/send"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textColor="@android:color/white" >
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <include layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

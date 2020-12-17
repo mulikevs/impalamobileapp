@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hide"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/header_activity" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8"
+                android:orientation="vertical"
+                android:paddingBottom="1dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Select Payment Method"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_18"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="vertical" >
+<!-- 
+                        <RadioButton
+                            android:id="@+id/radio_card"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design_gray"
+                            android:gravity="center"
+                            android:text="Card"
+                            android:textColor="@color/gry_text"
+                            android:textSize="15sp" /> -->
+
+                        <RadioButton
+                            android:id="@+id/radio_card"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Debit Card"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_interac"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Interac Online"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_bank"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Bank Account"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_ewallet"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="EWallet"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp"
+                            android:visibility="gone"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:id="@+id/interac_instant"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Instant Funds Delivery"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/address_ly"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Address Details"
+                            android:textColor="@color/blue_latter"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"/>
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@color/blue_latter"/>-->
+                        <LinearLayout
+                            android:id="@+id/state_ly"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/state_sp"
+                                style="@style/font_my_font"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/spinner_city"
+                                android:paddingLeft="@dimen/thirty"
+                                android:textAlignment="center"
+                                android:text="@string/curreny"
+                                android:textColor="@color/blue_latter"
+                                android:textSize="18sp" >
+                            </Spinner>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/address_line1_et"
+                            style="@style/login_my_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_custom"
+                            android:hint="Street Address"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/blue_latter"
+                            android:textColorHint="@color/gry_text"
+                            >
+                        </EditText>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@+id/address_line2_et"
+                                style="@style/login_my_font"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/edittext_custom"
+                                android:hint="Apt./Unit number"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/blue_latter"
+                                android:textColorHint="@color/gry_text"
+                                >
+                            </EditText>
+
+                            <EditText
+                                android:id="@+id/zip_code_et"
+                                style="@style/login_my_font"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight=".5"
+                                android:background="@drawable/edittext_custom"
+                                android:hint="Postal Code"
+                                android:inputType="number"
+                                android:padding="5dp"
+                                android:textColor="@color/blue_latter"
+                                android:textColorHint="@color/gry_text"
+                                >
+                            </EditText>
+
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/city_et"
+                            style="@style/login_my_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_custom"
+                            android:hint="City Name"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/blue_latter"
+                            android:textColorHint="@color/gry_text"
+                            >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/current_bal_ly"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/lig_gry"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current Balance: "
+                            android:textColor="@color/blue_latter"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <TextView
+                            android:id="@+id/user_bal_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="45 "
+                            android:textColor="@color/blue_latter"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/card_ly"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="vertical" >
+
+
+
+                        <TextView
+                            android:id="@+id/change_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Card "
+                            android:textColor="@color/blue_latter"
+                            android:textSize="16sp"
+                            android:visibility="gone"/>
+
+                        <Spinner
+                            android:id="@+id/select_card_sp"
+                            style="@style/font_my_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/country_link_bank_acc"
+                            android:paddingLeft="@dimen/five"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="14sp"
+                            android:visibility="gone"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:padding="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Instant Funds Delivery"
+                                android:textColor="@color/blue_latter"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal" >
+
+                            <Spinner
+                                android:id="@+id/card_sp"
+                                style="@style/font_my_font"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:drawablePadding="@dimen/ten"
+                                android:background="@drawable/edittext_custom"
+                                android:spinnerMode="dialog"
+                                android:textSize="14sp"
+                                android:gravity="end"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/new_card_ly"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/et_card_number"
+                                style="@style/font_my_font"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/edittext_custom"
+                                android:hint="Card Number"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/blue_latter"
+                                android:textColorHint="@color/gry_text"
+                                android:textSize="15sp"
+                                android:inputType="number"
+                                android:digits="0123456789 "
+                                android:maxLength="16">
+                            </EditText>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal" >
+
+                                <EditText
+                                    android:id="@+id/et_card_cvv"
+                                    style="@style/font_my_font"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/edittext_custom"
+                                    android:hint="CVV (Security Code)"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/blue_latter"
+                                    android:textColorHint="@color/gry_text"
+                                    android:textSize="15sp"
+                                    android:inputType="number"
+                                    android:maxLength="3">
+                                </EditText>
+
+                                <ImageView
+                                    android:id="@+id/cvv0"
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/cvv0" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Expiry Date:  "
+                                    android:textColor="@color/blue_latter"
+                                    android:textSize="16sp"/>
+
+                                <EditText
+                                    android:id="@+id/et_card_expiry_date"
+                                    style="@style/font_my_font"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/edittext_custom"
+                                    android:hint="MM/YY"
+                                    android:padding="5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/blue_latter"
+                                    android:textColorHint="@color/gry_text"
+                                    android:textSize="15sp"
+                                    android:inputType="text"
+                                    android:digits="0123456789/"
+                                    android:maxLength="5">
+                                </EditText>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bank_ly"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cash Delivery in 2 to 5 days"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="16sp"
+                            android:paddingBottom="15dp"/>
+
+                        <Spinner
+                            android:id="@+id/select_bank_sp"
+                            style="@style/font_my_font"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/country_link_bank_acc"
+                            android:paddingLeft="@dimen/five"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/reference"
+                        style="@style/font_my_font"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/edittext_custom"
+                        android:hint="Enter Reference"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text"
+                        android:textSize="15sp"
+                        android:visibility="gone">
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/remarks"
+                        style="@style/font_my_font"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/edittext_custom"
+                        android:hint="Enter Remarks"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text"
+                        android:textSize="15sp"
+                        android:visibility="gone">
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/coupen_code_et"
+                        style="@style/font_my_font"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_custom"
+                        android:hint="Coupon Code"
+                        android:padding="7dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text"
+                        android:textSize="14sp" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/apply_coupon_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_custom"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Apply"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:id="@+id/fraud_awareness"-->
+                    <!--android:textStyle="italic"-->
+                    <!--android:textColor="@color/blue_latter"-->
+                    <!--android:text="Customer fraud Awareness >>"-->
+                    <!--/>-->
+
+                <Button
+                    android:id="@+id/next3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_custom_blue"
+                    android:text="Next"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <include layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

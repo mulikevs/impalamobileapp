@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="180dp"
+    android:background="@drawable/courner_round_bankground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/upper_courner"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logo_small_old" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network Error"
+                android:id="@+id/message_txt"
+                android:textColor="@color/red_text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Enter your Password"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone" />
+        </LinearLayout>
+        -->
+
+
+        <!--
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/password_et_verfy"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/ten"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter" >
+            </EditText>
+        </LinearLayout>
+        -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/active_confirm_pin"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/active_confirm_pin"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue_latter"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/try_again"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_custom_blue"
+            android:gravity="center"
+            android:text="Try Again"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="195dp"
+    android:background="@drawable/courner_round_bankground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/upper_courner"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logo_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        
+             <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="25dp"
+            android:gravity="center" >
+       
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Error"
+            android:textColor="@color/red_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+  </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:gravity="center" >
+
+            
+            <EditText
+                android:id="@+id/active_pin_et"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="@string/digit"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/ten"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter" >
+            </EditText>
+           
+        </LinearLayout>
+       
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="70dp" >
+
+        <Button
+            android:id="@+id/try_again"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_custom_blue"
+            android:text="Try Again"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>-->

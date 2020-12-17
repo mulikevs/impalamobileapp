@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/lk_profile_fragment"
+    android:orientation="vertical"
+    android:weightSum="4.5" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue_latter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:orientation="vertical"
+        android:weightSum="3.5" >
+
+        <ListView
+            android:id="@+id/history_listview1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="3.5"
+            android:divider="@null"
+            android:orientation="vertical"
+            android:weightSum="3.5" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/add_account_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_custom_blue"
+            android:text="Add Debit Card"
+
+            android:textColor="@android:color/white"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/link_account_bt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_custom"
+            android:text="@string/link_bank_acc"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            >
+        </Button>
+        <include
+            layout="@layout/footer" />
+    </LinearLayout>
+
+    <!--  <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight=".6"
+        android:paddingTop="5dp"
+         android:gravity="bottom" >
+
+
+     </LinearLayout> -->
+
+</LinearLayout>

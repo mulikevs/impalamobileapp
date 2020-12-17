@@ -1,0 +1,4 @@
+#Mon Oct 26 10:49:01 EAT 2020
+base.0=C\:\\Users\\Impala Business\\Desktop\\AndroidWorkspace\\sawapay\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="12"
+        android:orientation="vertical"
+        android:weightSum="13" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choosetransfermode"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:orientation="horizontal"
+            android:weightSum="3.5" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.166"
+                android:orientation="vertical"
+                android:weightSum="1.166" >
+
+                <RelativeLayout
+                    android:id="@+id/ewallettomobilemoney_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.166"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/demo_im1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="27dp"
+                        android:background="@drawable/ewallet_mobile_blue"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/demo_im1"
+                        android:layout_weight=".05"
+                        android:gravity="bottom"
+                        android:text="@string/ewallettomobile"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="8sp"
+                        android:weightSum=".05" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ewallettomobilemoney_unselected"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.166"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/demo_im"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/wallet_mobile_white"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/demo_im"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight=".05"
+                        android:gravity="bottom"
+                        android:text="@string/ewallettomobile"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="8sp"
+                        android:weightSum=".05" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.166"
+                android:orientation="vertical"
+                android:weightSum="1.166" >
+
+                <RelativeLayout
+                    android:id="@+id/cardtomobilemoney_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.166"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/demo_im3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/card_mobile_blue"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/demo_im3"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight=".05"
+                        android:gravity="bottom"
+                        android:text="@string/cardtomobile"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="9sp"
+                        android:weightSum=".05" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardtomobilemoney_unselected"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.166"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/demo_im45"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/card_mobile_white"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/demo_im45"
+                        android:layout_weight=".05"
+                        android:gravity="bottom"
+                        android:text="@string/cardtomobile"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="9sp"
+                        android:weightSum=".05" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.166"
+                android:orientation="vertical"
+                android:weightSum="1.166" >
+
+                <RelativeLayout
+                    android:id="@+id/ewallettoewallet_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.166"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/demo_im35"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="27dp"
+                        android:background="@drawable/wallet_wallet_blue"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/demo_im35"
+                        android:layout_weight=".05"
+                        android:gravity="bottom"
+                        android:text="@string/ewallettoewallet"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="8sp"
+                        android:weightSum=".05" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ewallettoewallet_unselected"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.166"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/demo_im455"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/wallet_wallet_white"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/demo_im455"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight=".05"
+                        android:gravity="bottom"
+                        android:text="@string/ewallettoewallet"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="8sp"
+                        android:weightSum=".05" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".7"
+            android:orientation="horizontal"
+            android:weightSum=".7" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".35"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".35" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".35"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum=".35" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum=".5" >
+
+                <EditText
+                    android:id="@+id/amount_et"
+                    style="@style/font_my_font"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="@string/one"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:weightSum=".5" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum=".5" >
+
+                <Spinner
+                    android:id="@+id/curruny_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/country_link_bank_acc"
+                    android:hint="@string/usd"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:weightSum=".5" >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_add_tv_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_add"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_add_et_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1" >
+
+            <EditText
+                android:id="@+id/email_id_et"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_custom"
+                android:hint="@string/ent_ur_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/ten"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter"
+                android:weightSum=".5" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_gray_courner"
+            android:gravity="center_vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/currencyinkyn"
+                android:textColor="@color/gry_text"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/base_currence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/gry_text"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/currency_kes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/gry_text"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mobile_no_tv_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7"
+            android:gravity="center_vertical"
+            android:weightSum=".7" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_no"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mobile_no_et_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_custom"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Spinner
+                android:id="@+id/mobile_code_sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:background="@null"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/mobile_no_et"
+                style="@style/font_my_font"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8"
+                android:background="@null"
+                android:hint="@string/mobile_num"
+                android:inputType="number"
+                android:paddingLeft="@dimen/ten"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_card_tv_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7"
+            android:gravity="center_vertical"
+            android:weightSum=".7" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_card"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_card_sp_ly"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <Spinner
+                android:id="@+id/cardname_sp"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/country_link_bank_acc"
+                android:paddingLeft="@dimen/five"
+                android:text="@string/curreny"
+                android:textColor="@color/blue_latter"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:weightSum="1.5" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:weightSum=".5" />
+
+            <Button
+                android:id="@+id/add_account_bt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_custom_blue"
+                android:text="@string/sendmoney"
+                android:textColor="@android:color/white"
+                android:weightSum="1" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:weightSum=".5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:weightSum=".5" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5" >
+
+                    <TextView
+                        android:id="@+id/samp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/ssl"
+                        android:text="@string/yourcarddetail"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="8sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/nortan" />
+
+                    <ImageView
+                        android:id="@+id/ssl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/samp1"
+                        android:background="@drawable/shield" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

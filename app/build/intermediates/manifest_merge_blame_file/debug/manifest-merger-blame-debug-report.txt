@@ -1,0 +1,358 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.firstchoicegl.sawa"
+4    android:versionCode="37"
+5    android:versionName="1.3.4" >
+6
+7    <uses-sdk
+7-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:7:5-8:41
+8        android:minSdkVersion="19"
+8-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:7:5-8:41
+9        android:targetSdkVersion="26" />
+9-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:8:9-38
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:10:5-67
+11-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:10:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:11:5-79
+12-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:11:22-76
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:12:5-75
+13-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:12:22-72
+14    <uses-permission android:name="android.permission.READ_CONTACTS" />
+14-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:13:5-72
+14-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:13:22-69
+15    <uses-permission android:name="android.permission.CALL_PHONE" />
+15-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:14:5-69
+15-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:14:22-66
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:15:5-65
+16-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:15:22-62
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:16:5-81
+17-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:16:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:17:5-80
+18-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:17:22-77
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:22:5-67
+19-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:22:22-65
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:22:5-81
+20-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:22:22-79
+21
+22    <permission
+22-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:24:5-109
+23        android:name="com.firstchoicegl.sawa.permission.C2D_MESSAGE"
+23-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:24:17-71
+24        android:protectionLevel="signature" />
+24-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:24:72-107
+25
+26    <uses-permission android:name="com.firstchoicegl.sawa.permission.C2D_MESSAGE" />
+26-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:26:5-78
+26-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:26:22-76
+27
+28    <application
+28-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:19:5-98:19
+29        android:name="com.impalapay.uk.ControlApplication"
+29-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:20:9-59
+30        android:allowBackup="true"
+30-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:21:9-35
+31        android:debuggable="true"
+32        android:icon="@drawable/small_logo_2"
+32-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:22:9-46
+33        android:label="@string/app_name"
+33-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:23:9-41
+34        android:supportsRtl="true"
+34-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:16:9-35
+35        android:testOnly="true"
+36        android:theme="@style/AppTheme" >
+36-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:24:9-40
+37        <activity
+37-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:25:9-34:20
+38            android:name="com.impalapay.uk.SpleshScreen"
+38-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:26:13-57
+39            android:label="@string/app_name"
+39-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:27:13-45
+40            android:screenOrientation="portrait" >
+40-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:28:13-49
+41            <intent-filter>
+41-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:29:13-33:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:30:17-69
+42-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:30:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:32:17-77
+44-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:32:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:35:9-38:52
+48            android:name="com.impalapay.uk.Login"
+48-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:36:13-50
+49            android:label="@string/title_activity_reset_password"
+49-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:37:13-66
+50            android:screenOrientation="portrait" />
+50-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:38:13-49
+51        <activity
+51-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:39:9-42:52
+52            android:name="com.impalapay.uk.ForgotPassword"
+52-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:40:13-59
+53            android:label="@string/title_activity_forgot_password"
+53-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:41:13-67
+54            android:screenOrientation="portrait" />
+54-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:42:13-49
+55        <activity
+55-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:43:9-46:52
+56            android:name="com.impalapay.uk.Registration"
+56-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:44:13-57
+57            android:label="@string/title_activity_registration"
+57-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:45:13-64
+58            android:screenOrientation="portrait" />
+58-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:46:13-49
+59        <activity
+59-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:47:9-52:68
+60            android:name="com.impalapay.uk.MainActivity"
+60-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:48:13-57
+61            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+61-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:49:13-122
+62            android:label="@string/title_activity_main"
+62-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:50:13-56
+63            android:screenOrientation="portrait"
+63-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:51:13-49
+64            android:windowSoftInputMode="adjustResize|adjustPan" />
+64-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:52:13-65
+65        <activity
+65-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:53:9-56:52
+66            android:name="com.impalapay.uk.ProfileActivity"
+66-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:54:13-60
+67            android:label="@string/title_activity_profile"
+67-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:55:13-59
+68            android:screenOrientation="portrait" />
+68-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:56:13-49
+69        <activity
+69-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:57:9-61:59
+70            android:name="com.impalapay.uk.Standing_Transcation"
+70-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:58:13-65
+71            android:label="Standing Transcation"
+71-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:59:13-49
+72            android:screenOrientation="portrait"
+72-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:60:13-49
+73            android:theme="@android:style/Theme.Dialog" />
+73-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:61:13-56
+74        <activity
+74-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:62:9-65:52
+75            android:name="com.impalapay.uk.AboutSawaPay"
+75-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:63:13-57
+76            android:label="Standing Transcation"
+76-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:64:13-49
+77            android:screenOrientation="portrait" />
+77-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:65:13-49
+78        <activity
+78-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:66:9-68:52
+79            android:name="com.impalapay.uk.SendMoney2"
+79-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:67:13-55
+80            android:screenOrientation="portrait" />
+80-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:68:13-49
+81        <activity
+81-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:69:9-71:52
+82            android:name="com.impalapay.uk.SendMoney3"
+82-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:70:13-55
+83            android:screenOrientation="portrait" />
+83-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:71:13-49
+84        <!-- <activity -->
+85        <!-- android:name=".SendMoney" -->
+86        <!-- android:screenOrientation="portrait" /> -->
+87        <activity
+87-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:75:9-77:52
+88            android:name="com.impalapay.uk.SendMoneyCashPickup"
+88-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:76:13-64
+89            android:screenOrientation="portrait" />
+89-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:77:13-49
+90        <activity
+90-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:78:9-80:52
+91            android:name="com.impalapay.uk.SendMoney4"
+91-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:79:13-55
+92            android:screenOrientation="portrait" />
+92-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:80:13-49
+93        <activity
+93-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:81:9-83:52
+94            android:name="com.impalapay.uk.SendMoney_PayBill"
+94-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:82:13-62
+95            android:screenOrientation="portrait" />
+95-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:83:13-49
+96        <activity
+96-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:84:9-86:52
+97            android:name="com.impalapay.uk.AttachCardActivity"
+97-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:85:13-63
+98            android:screenOrientation="portrait" />
+98-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:86:13-49
+99        <activity
+99-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:87:9-89:52
+100            android:name="com.impalapay.uk.AddBankAccountActivity"
+100-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:88:13-67
+101            android:screenOrientation="portrait" />
+101-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:89:13-49
+102        <activity
+102-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:90:9-92:75
+103            android:name="com.impalapay.uk.Control_Application"
+103-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:91:13-64
+104            android:label="@string/title_activity_control__application" />
+104-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:92:13-72
+105        <activity
+105-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:93:9-95:52
+106            android:name="com.impalapay.uk.TransferLimit"
+106-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:94:13-58
+107            android:screenOrientation="portrait" />
+107-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:95:13-49
+108        <activity android:name="com.impalapay.uk.InteracWebview" />
+108-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:96:9-68
+108-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:96:19-65
+109        <activity android:name="com.impalapay.uk.Otp" />
+109-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:97:9-66
+109-->C:\Users\Impala Business\Desktop\AndroidWorkspace\sawapay\app\src\main\AndroidManifest.xml:97:19-54
+110
+111        <meta-data
+111-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\a5e7b851601356713600a6774b9b4b2e\appcompat-v7-26.1.0\AndroidManifest.xml:26:9-28:38
+112            android:name="android.support.VERSION"
+112-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\a5e7b851601356713600a6774b9b4b2e\appcompat-v7-26.1.0\AndroidManifest.xml:27:13-51
+113            android:value="26.1.0" />
+113-->[com.android.support:appcompat-v7:26.1.0] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\a5e7b851601356713600a6774b9b4b2e\appcompat-v7-26.1.0\AndroidManifest.xml:28:13-35
+114
+115        <activity
+115-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:17:9-19:65
+116            android:name="com.cardinalcommerce.shared.cs.userinterfaces.ChallengeHTMLView"
+116-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:18:13-91
+117            android:theme="@style/CardinalSDKTheme.ActionBar" />
+117-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:19:13-62
+118        <activity
+118-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:20:9-23:76
+119            android:name="com.cardinalcommerce.shared.cs.userinterfaces.ChallengeNativeView"
+119-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:21:13-93
+120            android:theme="@style/CardinalSDKTheme.ActionBar"
+120-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:22:13-62
+121            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+121-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.1-2] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\7847963ca10ba2cb49517e0092d77f42\cardinalmobilesdk-2.2.1-2\AndroidManifest.xml:23:13-73
+122
+123        <receiver
+123-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:25:7-26:18
+124            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+124-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:25:17-89
+125            android:enabled="true"
+125-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:25:90-112
+126            android:exported="false" >
+126-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:25:113-137
+127        </receiver>
+128        <receiver
+128-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:27:7-31:18
+129            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+129-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:27:17-104
+130            android:enabled="true"
+130-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:27:162-184
+131            android:exported="true"
+131-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:27:185-208
+132            android:permission="android.permission.INSTALL_PACKAGES" >
+132-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:27:105-161
+133            <intent-filter>
+133-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:28:11-30:27
+134                <action android:name="com.android.vending.INSTALL_REFERRER" />
+134-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:29:15-76
+134-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:29:23-74
+135            </intent-filter>
+136        </receiver>
+137
+138        <service
+138-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:32:7-137
+139            android:name="com.google.android.gms.measurement.AppMeasurementService"
+139-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:32:16-87
+140            android:enabled="true"
+140-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:32:88-110
+141            android:exported="false" />
+141-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:32:111-135
+142        <service
+142-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:33:7-197
+143            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+143-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:33:16-90
+144            android:enabled="true"
+144-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:33:148-170
+145            android:exported="false"
+145-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:33:171-195
+146            android:permission="android.permission.BIND_JOB_SERVICE" />
+146-->[com.google.firebase:firebase-analytics:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\3d313799bd1da75bf1a501613f4a7359\firebase-analytics-11.0.4\AndroidManifest.xml:33:91-147
+147
+148        <receiver
+148-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:30:9-35:20
+149            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+149-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:30:19-84
+150            android:exported="true"
+150-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:30:85-108
+151            android:permission="com.google.android.c2dm.permission.SEND" >
+151-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:30:109-169
+152            <intent-filter>
+152-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:31:13-34:29
+153                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+153-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:32:17-80
+153-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:32:25-78
+154
+155                <category android:name="com.firstchoicegl.sawa" />
+155-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:33:17-60
+155-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:33:27-58
+156            </intent-filter>
+157        </receiver>
+158        <!--
+159 Internal (not exported) receiver used by the app to start its own exported services
+160             without risk of being spoofed.
+161        -->
+162        <receiver
+162-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:39:9-119
+163            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+163-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:39:19-92
+164            android:exported="false" />
+164-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:39:93-117
+165        <!--
+166 FirebaseInstanceIdService performs security checks at runtime,
+167             no need for explicit permissions despite exported="true"
+168        -->
+169        <service
+169-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:43:9-47:19
+170            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+170-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:43:18-82
+171            android:exported="true" >
+171-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:43:83-106
+172            <intent-filter android:priority="-500" >
+172-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:44:13-46:29
+172-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:44:28-51
+173                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+173-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:45:17-79
+173-->[com.google.firebase:firebase-iid:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\921c1a18977eb1fd18651daf618714c6\firebase-iid-11.0.4\AndroidManifest.xml:45:25-77
+174            </intent-filter>
+175        </service>
+176
+177        <provider
+177-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\1691588f893963740320c93ad046763a\firebase-common-11.0.4\AndroidManifest.xml:6:9-194
+178            android:name="com.google.firebase.provider.FirebaseInitProvider"
+178-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\1691588f893963740320c93ad046763a\firebase-common-11.0.4\AndroidManifest.xml:6:79-143
+179            android:authorities="com.firstchoicegl.sawa.firebaseinitprovider"
+179-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\1691588f893963740320c93ad046763a\firebase-common-11.0.4\AndroidManifest.xml:6:19-78
+180            android:exported="false"
+180-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\1691588f893963740320c93ad046763a\firebase-common-11.0.4\AndroidManifest.xml:6:144-168
+181            android:initOrder="100" />
+181-->[com.google.firebase:firebase-common:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\1691588f893963740320c93ad046763a\firebase-common-11.0.4\AndroidManifest.xml:6:169-192
+182
+183        <meta-data
+183-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\8b5a0196298b9d281ddd1494889c18c7\play-services-basement-11.0.4\AndroidManifest.xml:20:9-121
+184            android:name="com.google.android.gms.version"
+184-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\8b5a0196298b9d281ddd1494889c18c7\play-services-basement-11.0.4\AndroidManifest.xml:20:20-65
+185            android:value="@integer/google_play_services_version" />
+185-->[com.google.android.gms:play-services-basement:11.0.4] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\8b5a0196298b9d281ddd1494889c18c7\play-services-basement-11.0.4\AndroidManifest.xml:20:66-119
+186        <meta-data
+186-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\6db761fb324caface9ce5d41a3f8ac91\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+187            android:name="android.arch.lifecycle.VERSION"
+187-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\6db761fb324caface9ce5d41a3f8ac91\runtime-1.0.0\AndroidManifest.xml:26:13-58
+188            android:value="27.0.0-SNAPSHOT" />
+188-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Impala Business\.gradle\caches\transforms-2\files-2.1\6db761fb324caface9ce5d41a3f8ac91\runtime-1.0.0\AndroidManifest.xml:27:13-44
+189    </application>
+190
+191</manifest>

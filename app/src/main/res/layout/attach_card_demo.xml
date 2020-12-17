@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_activity" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/cardname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Card Nickname"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/samp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/giveanameforesa"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="9sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/camera"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/cardname_et"
+                style="@style/login_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Card Nickname (Optional)"
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    android:id="@+id/cardname12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/cardnumber"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/samp12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="@string/thetextoffrontofcard"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="9sp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/card_number_et"
+                style="@style/login_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_custom"
+                android:inputType="number"
+                android:maxLength="19"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:hint="Card Number"
+                android:textColor="@color/blue_latter" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="@string/expireddate"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:text="Security Code"
+                    android:inputType="number"
+                    android:textColor="@color/blue_latter"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/valid_month_et"
+                        style="@style/login_my_font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_custom"
+                        android:hint="@string/month"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="5dp"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text" >
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textVi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="@string/div"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/valid_year_et"
+                        style="@style/login_my_font"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_custom"
+                        android:ems="10"
+                        android:hint="Year"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="5dp"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                  
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/cvc"
+                        style="@style/login_my_font"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edittext_custom"
+                        android:ems="10"
+                        android:hint="CVV"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:padding="5dp"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text"
+                        android:layout_marginRight="5dp">
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/cvv00"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:background="@drawable/cvv0" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/nameoncard"
+                android:textColor="@color/blue_latter"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/name_of_card_et"
+                style="@style/login_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="@string/cardownername"
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text"
+                android:visibility="gone">
+            </EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/address_ly"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Billing Address Details"
+                    android:textColor="@color/blue_latter"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/blue_latter"/>-->
+                <LinearLayout
+                    android:id="@+id/state_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/state_sp"
+                        style="@style/font_my_font"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_city"
+                        android:paddingLeft="@dimen/thirty"
+                        android:textAlignment="center"
+                        android:text="@string/curreny"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="18sp" >
+                    </Spinner>
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/address_line1_et"
+                style="@style/login_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Address Line 1"
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text"
+                >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/address_line2_et"
+                    style="@style/login_my_font"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Address Line 2"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/gry_text"
+                    >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/zip_code_et"
+                    style="@style/login_my_font"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Zip Code"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/gry_text"
+                    >
+                </EditText>
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/city_et"
+                style="@style/login_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="City Name"
+                android:inputType="text"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text"
+                >
+            </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/add_account_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/button_custom_blue"
+                    android:text="@string/attachandvarify"
+                    android:textColor="@android:color/white" >
+                </Button>
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

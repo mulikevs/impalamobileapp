@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hide"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_activity" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fillViewport="true" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/bankname"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/bank_et"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Enter full bank name"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/country"
+                android:visibility="gone"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+
+            <Spinner
+                android:id="@+id/country_tv"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/country_link_bank_acc"
+                android:paddingLeft="@dimen/five"
+                android:text="@string/curreny"
+                android:visibility="gone"
+                android:textColor="@color/blue_latter"
+                android:textSize="18sp" >
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/aba_number"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/aba_number_et"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_custom"
+                android:inputType="text"
+                android:hint="Enter full routing number"
+                android:maxLength="9"
+                android:padding="5dp"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/accountnum"
+                android:textColor="@color/blue_latter"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/account_number_et"
+                style="@style/font_my_font"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_custom"
+                android:hint="Enter full account number"
+                android:inputType="number"
+                android:maxLength="19"
+                android:padding="5dp"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/gry_text"
+                android:weightSum="1" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/address_ly"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Billing Address Details"
+                    android:textColor="@color/blue_latter"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/blue_latter"/>-->
+                <LinearLayout
+                    android:id="@+id/state_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/state_sp"
+                        style="@style/font_my_font"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_city"
+                        android:paddingLeft="@dimen/thirty"
+                        android:textAlignment="center"
+                        android:text="@string/curreny"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="18sp" >
+                    </Spinner>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/address_line1_et"
+                    style="@style/login_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="Address Line 1"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/gry_text"
+                    >
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/address_line2_et"
+                        style="@style/login_my_font"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edittext_custom"
+                        android:hint="Address Line 2"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text"
+                        >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/zip_code_et"
+                        style="@style/login_my_font"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edittext_custom"
+                        android:hint="Zip Code"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/gry_text"
+                        >
+                    </EditText>
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/city_et"
+                    style="@style/login_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_custom"
+                    android:hint="City Name"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/gry_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/add_account_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_custom_blue"
+                    android:text="@string/attachandvarifyaccou"
+                    android:textColor="@android:color/white" >
+                </Button>
+
+                <include layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

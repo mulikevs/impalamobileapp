@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue_latter" />
+
+    <ScrollView
+        android:id="@+id/hide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fillViewport="true" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/light_gray_courner"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pdetailfirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="ImpalaPay&apos;s Rate: "
+                    android:textColor="@color/gry_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/pdetailsendvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pdetailrecevievalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pdetaillast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/gry_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/blue_latter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destination:"
+                    android:layout_marginRight="25dp"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Spinner
+                    android:id="@+id/sp_destination_country"
+                    style="@style/font_my_font"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/country_link_bank_acc" >
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:text="Receive Amount: "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:background="@drawable/edittext_custom"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/currency_convert_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="KES"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/text_size_16" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/precievevalue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:inputType="numberDecimal"
+                            android:maxLength="14"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/yellow"
+                            android:textColorHint="@color/gry_text"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:text="Send Amount: "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:background="@drawable/edittext_custom"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/currency_base_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="USD"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <EditText
+                            android:id="@+id/psendvalue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:inputType="numberDecimal"
+                            android:maxLength="12"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/yellow"
+                            android:textColorHint="@color/gry_text"
+                            android:textSize="@dimen/text_size_16" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gry_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:text="Transfer fee: "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fee_base_tv"
+                        android:layout_marginLeft="4dp"
+                        android:text="USD"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/text_size_16" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_transfer_fees"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gry_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:text="Total Cost: "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="USD"
+                        android:id="@+id/total_cost_base_tv"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/text_size_16" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:text=" 0 "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/blue_latter"
+                    android:layout_marginBottom="5dp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_kenya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Method"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/radio_MPESA"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="M-PESA"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_BANK"
+                            android:layout_width="145dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Bank Account"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_pay"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="PayBill"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_eWallet"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Ewallet"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp"
+                            android:visibility="gone"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uganda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Method"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/radio_Uganda_Airtel_Money"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Airtel Money"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_Uganda_MTN_Money"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="MTN Money"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_zimbabwe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Method"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/radio_Zimbabwe_Telecash"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Telecash"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+                        <RadioButton
+                            android:id="@+id/radio_Zimbabwe_pickup"
+                            android:layout_width="118dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:button="@drawable/custom_checkbox_design"
+                            android:gravity="center"
+                            android:text="Cash Pickup"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="15sp" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:visibility="visible"
+                android:background="@color/blue_latter"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/daily_limit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/blue_latter"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/monthly_limit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/blue_latter"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you want to increase your transfer limits?"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="11sp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/increase_limit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/button_custom_blue"
+                    android:text="Yes"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/blue_latter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/next1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button_custom_blue"
+                    android:text="Next"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <include layout="@layout/footer" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- </LinearLayout> -->
+    </ScrollView>
+
+</LinearLayout>

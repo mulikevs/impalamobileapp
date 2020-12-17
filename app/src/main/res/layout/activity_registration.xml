@@ -1,0 +1,589 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/small_logo"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/small_logo_old" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Sign Up"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                -->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="To comply with anti-money laundering rules, ensure the name used to register match the name on your debit card or bank account."
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13dp"></TextView>
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:background="@color/blue_latter"/>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CARD OR BANK ACCOUNT"
+                    android:textColor="@color/blue_latter"
+                    android:visibility="gone"></TextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/first_name_et"
+                        style="@style/font_my_font"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight=".5"
+                        android:inputType="textCapWords"
+                        android:background="@drawable/edittext_custom"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:drawableLeft="@drawable/profile_icon"
+                        android:drawablePadding="@dimen/ten"
+                        android:hint="@string/first_name"
+                        android:paddingLeft="@dimen/ten"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/blue_latter"></EditText>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".02" />
+
+                    <EditText
+                        android:id="@+id/last_name_et"
+                        style="@style/font_my_font"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight=".5"
+                        android:inputType="textCapWords"
+                        android:background="@drawable/edittext_custom"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:drawableLeft="@drawable/profile_icon"
+                        android:drawablePadding="@dimen/ten"
+                        android:hint="@string/last_name"
+                        android:paddingLeft="@dimen/ten"
+                        android:textColor="@color/blue_latter"
+                        android:textColorHint="@color/blue_latter"></EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/gender_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_background_gender"
+                    android:paddingLeft="@dimen/thirty"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp">
+                </Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bod_tv"
+                            style="@style/font_my_font"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittext_custom"
+                            android:drawableLeft="@drawable/calendar"
+                            android:drawablePadding="@dimen/five"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/ten"
+                            android:text="@string/dateofbirth"
+                            android:textColor="@color/blue_latter"></TextView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".02" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight=".34"
+                        android:background="@drawable/edittext_custom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum=".34">
+
+                        <Spinner
+                            android:id="@+id/currency_sp"
+                            style="@style/font_my_font"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight=".34"
+                            android:background="@drawable/spinner_background_drawable"
+                            android:paddingLeft="@dimen/thirty"
+                            android:text="@string/curreny"
+                            android:textColor="@color/blue_latter"
+                            android:textSize="18sp"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:id="@+id/layout_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/country_tv"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_backround_country"
+                    android:paddingLeft="@dimen/thirty"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp"></Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/layout_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/country_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_backround_country"
+                    android:paddingLeft="@dimen/thirty"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp"></Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/city_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/city_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_city"
+                    android:paddingLeft="@dimen/thirty"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp"></Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/email_et"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawableLeft="@drawable/mail"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="E-mail Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_custom"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/contry_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@drawable/phone"
+                    android:gravity="center"
+                    android:textColor="@color/blue_latter"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/mobile_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_mobile_reg"
+                    android:paddingLeft="18dp"
+                    android:text="+1"
+                    android:textColor="@color/blue_latter"></Spinner>
+
+                <EditText
+                    android:id="@+id/mobile_et"
+                    style="@style/font_my_font"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:background="@null"
+                    android:hint="@string/mobile_no"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/five"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/occupation_et"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawableLeft="@drawable/coin"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="Occupation"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/state"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/edittext_custom"
+                    android:drawablePadding="@dimen/ten"
+                    android:gravity="end"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/city_reg"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="City Name"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter" />
+
+                <!-- <EditText
+                     android:id="@+id/state_reg"
+                     style="@style/font_my_font"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/edittext_custom"
+                     android:drawablePadding="@dimen/ten"
+                     android:hint="State Code e.g. GA"
+                     android:paddingLeft="@dimen/ten"
+                     android:textColor="@color/blue_latter"
+                     android:textColorHint="@color/blue_latter" /> -->
+
+                <EditText
+                    android:id="@+id/address_line1"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="Address Line 1"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter" />
+
+                <EditText
+                    android:id="@+id/zip_code_reg"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="Zip Code"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/pass_et"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawableLeft="@drawable/password1_icon"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/conf_pass_et"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawableLeft="@drawable/password1_icon"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="@string/re_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:weightSum=".7"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/referral_code"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="Referral Code (Optional)"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/ten"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:weightSum=".7"></EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/register_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_custom"
+                    android:text="@string/register"
+                    android:textColor="@android:color/white"></Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/normal_text4"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="10sp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/terms_and_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms of Service"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="10sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" and "
+                        android:textColor="@color/blue_latter"
+                        android:textSize="10sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/privacy_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/blue_latter"
+                        android:textSize="10sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

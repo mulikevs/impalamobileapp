@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/header_activity" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/profile_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/profile"
+                android:textColor="@color/blue_latter"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/lig_gry" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/username_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="Sly"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="@string/name_"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/lig_gry" />
+
+                <EditText
+                    android:id="@+id/last_name_et"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp"
+                    android:visibility="gone" >
+
+                    <requestFocus
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/first_name_et"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/last_name_et"
+                    android:background="@null"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/calendar" />
+
+                <TextView
+                    android:id="@+id/user_dob_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="DoB"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/lig_gry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="@string/DOB_"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/coin" />
+
+                <TextView
+                    android:id="@+id/user_currency_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="US Dollar"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/user_basecurrency_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/currency_drop"
+                    android:background="@drawable/basecurrency_spinner"
+                    android:gravity="end"
+                    android:paddingRight="10dp"
+                    android:spinnerMode="dialog"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/currency_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/dropdown"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/lig_gry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:text="@string/curreny_"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mail" />
+
+                <TextView
+                    android:id="@+id/user_email_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/yash"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/lig_gry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:text="E-mail:"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/phone" />
+
+                <TextView
+                    android:id="@+id/user_mobileno_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/yash"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/lig_gry" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:text="@string/mobile_no_"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/user_mobileno_et"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/mobile_code_sp"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/user_mobileno_et"
+                    android:layout_marginRight="130dp"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/five"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/preText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/user_mobileno_et"
+                    android:layout_alignBottom="@+id/user_mobileno_et"
+                    android:layout_marginRight="18dp"
+                    android:layout_toLeftOf="@+id/user_mobileno_et"
+                    android:text="(+1)"
+                    android:textColor="@color/blue_latter"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/earth" />
+
+                <TextView
+                    android:id="@+id/user_contry_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="US"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/contry_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/dropdown"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/user_contry_sp"
+                    style="@style/font_my_font"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/contry_drop"
+                    android:background="@drawable/basecurrency_spinner"
+                    android:gravity="end"
+                    android:paddingRight="8dp"
+                    android:spinnerMode="dialog"
+                    android:text="@string/curreny"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/lig_gry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imageView6"
+                    android:text="Country"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/addressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:text="Address"
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+                <!--
+            <Spinner
+                android:id="@+id/stateSpinner"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittext_custom"
+                 />
+                -->
+
+                <EditText
+                    android:id="@+id/address_line1_et"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:hint="Address Line 1"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/address_line2_et"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="end"
+                android:hint="Address Line 2"
+                android:paddingLeft="7dp"
+                android:textColor="@color/blue_latter"
+                android:textColorHint="@color/blue_latter"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/building" />
+
+                <TextView
+                    android:id="@+id/stateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="4dp"
+                    android:text="State : "
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/stateSpinner"
+                    style="@style/font_my_font"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/basecurrency_spinner"
+                    android:gravity="end"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="8dp"
+                    android:spinnerMode="dialog"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/building" />
+
+                <TextView
+                    android:id="@+id/cityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="3dp"
+                    android:text="City : "
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/cityedit"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="end"
+                    android:hint="City"
+                    android:paddingLeft="7dp"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/zip" />
+
+                <TextView
+                    android:id="@+id/zipText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Zip Code : "
+                    android:textColor="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/zipCode"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="Zip Code"
+                    android:inputType="number"
+                    android:paddingLeft="7dp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_below="@+id/zipCode"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/lig_gry" />
+            </RelativeLayout>
+
+            <!--
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zip" />
+
+            <TextView
+                android:id="@+id/user_zipcode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/yash"
+                android:textColor="@color/blue_latter"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/lig_gry" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageView9"
+                android:text="@string/zipcode"
+                android:textColor="@color/blue_latter"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/user_zipcode_et"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:ems="10"
+                android:singleLine="true"
+                android:textColor="@color/blue_latter"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+            -->
+            <!--
+        <ScrollView
+            android:id="@+id/fill_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="@null"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/fill_address_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/address_first_line_et"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawableLeft="@drawable/location"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="@string/addressline"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:paddingLeft="@dimen/ten"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/address_second_line_et"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawableLeft="@drawable/location"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="@string/addressline2"
+                    android:inputType="text"
+                    android:padding="6dp"
+                    android:paddingLeft="@dimen/ten"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/zipcode_et"
+                    style="@style/font_my_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="95dp"
+                    android:background="@drawable/edittext_custom"
+                    android:drawableLeft="@drawable/zip"
+                    android:drawablePadding="@dimen/ten"
+                    android:hint="@string/zipcode1"
+                    android:inputType="number"
+                    android:padding="6dp"
+                    android:paddingLeft="@dimen/ten"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_latter"
+                    android:textColorHint="@color/blue_latter" >
+                </EditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="135dp" />
+            </RelativeLayout>
+        </ScrollView>            -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom" >
+
+        <include layout="@layout/footer" />
+    </LinearLayout>
+
+</LinearLayout>

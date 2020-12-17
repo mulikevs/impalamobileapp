@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_green">#6fb43f</color>
+    <color name="success_color">#4F8A10</color>
+
+    <color name="light_pink">#fbfbfb</color>
+    <color name="blue_latter">#0071bb</color>
+    <color name="yellow">#fdb813</color>
+    <color name="brown">#3d3c3f</color>
+    <color name="dark_brown">#282a2f</color>
+    <color name="dark_gray">#949494</color>
+    <color name="sky_blue">#65bcee</color>
+    <color name="atm_brown">#c88f5c</color>
+    <color name="atm_yellow">#e9b25a</color>
+    <color name="red_text">#ec1c24</color>
+    <color name="transpartent_black">#00000000</color>
+    <color name="light_gry">#e5e5e5</color>
+    <color name="gry_text">#a1a2a0</color>
+    <color name="blur">#29000000</color>
+    <color name="lig_gry">#dfe0e2</color>
+	<color name="lig_blue">#bfdcee</color>
+    <color name="white">#FFFFFF</color>
+    <bool name="default_circle_indicator_centered">true</bool>
+
+    <color name="default_circle_indicator_fill_color">#0072bc</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+
+    <color name="logo_theme">#0171BC</color>
+
+    <color name="black">#000000</color>
+
+    <integer name="default_circle_indicator_orientation">0</integer>
+
+    <dimen name="default_circle_indicator_radius">6dp</dimen>
+
+    <bool name="default_circle_indicator_snap">false</bool>
+
+    <color name="default_circle_indicator_stroke_color">#0072bc</color>
+
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+
+    <bool name="default_line_indicator_centered">true</bool>
+
+</resources>

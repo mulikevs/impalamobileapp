@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/recipient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textColor="@color/blue_latter"
+            android:textSize="16sp"
+             />
+
+        <TextView
+            android:id="@+id/ref_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ref no. 456897"
+            android:textColor="@color/blue_latter"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/amount_sent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:gravity="center"
+        android:text="500 KES"
+        android:textColor="@color/blue_latter" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/pay_button_selector"
+        android:text="Pay"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</LinearLayout>
